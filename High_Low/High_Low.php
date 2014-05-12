@@ -14,15 +14,14 @@ do
 	{
 	
 		fwrite(STDOUT, "HIGHER\n");
-		echo "Guess? ";
 		$guess = (int) fgets(STDIN);
 	}
 	elseif ($guess > $number)
 	{
 		fwrite(STDOUT, "LOWER\n" );
-		echo "Guess? ";
 		$guess = (int) fgets(STDIN);
 	}
+	echo "Guess? ";
 	$attempts++;
 } 
 while ($guess != $number);
